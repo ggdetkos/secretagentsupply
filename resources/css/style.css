@@ -15,12 +15,14 @@ body {
 h1 {
   font-size: 2rem;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 0;
 }
 
 h2 {
   font-size: 1rem;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 0 0 0.25rem;
 } 
 
@@ -30,6 +32,7 @@ h2 {
   display: flex;
   flex-grow: 1;
   flex-shrink: 1;
+/*  border: medium dashed lightgreen; */
 }
 
 header {
@@ -185,7 +188,7 @@ footer {
   align-items: center;
 }
 
-/* Adjustments for tablets, below 1024px wide */
+/* Adjustments for tablets 1024px wide and below */
 @media only screen and (max-width: 1024px) {
   #eyeglasses {
     display: none;
@@ -205,3 +208,44 @@ footer {
   width: 47%;
 }
 
+/* Adjustments for phones 470px wide and below */
+
+@media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 0.77rem;
+  } 
+  #headlineRow {
+    height: 15rem;
+    display: flex;
+    align-items: flex-end;
+  }
+  #headlineText {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+  #watch {
+    display: none;
+  }
+  #products,
+  #locationHours {
+    justify-content: center;
+  }
+  #locationHours {
+    flex-wrap: wrap
+  }
+  #products .flexContainer,
+  #locationHours .flexContainer {
+    width: 90%;
+  }
+  #locationHours #hours {
+    margin-top: 0.5rem;
+  }
+  footer span.page {
+    text-align: center;
+    flex-grow: 0;
+  }
+}
