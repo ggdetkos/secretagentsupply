@@ -81,7 +81,7 @@ header {
   width: 20rem;
   padding: 2rem 3rem;
   margin-top: 9rem;
-  z-index: 90;
+  z-index: 70;
 }
 
 nav {
@@ -91,14 +91,20 @@ nav {
   position: -webkit-sticky;
   position: sticky;
     top: 2.32rem;
-  z-index: 100;
+  z-index: 80;
   display: flex;
   justify-content: center;
 }
 
-div#navContainer {
+#navContainer {
   color: #FFFFFF;
   margin: 0.75rem 0;
   display: flex;
+  justify-content: center;
+}
+
+.navList {
+  width: 100%;
+  display: inline-flex;
   justify-content: space-between;
 }
