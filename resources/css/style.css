@@ -25,8 +25,11 @@ h2 {
 } 
 
 .page {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 header {
@@ -103,6 +106,10 @@ nav {
   justify-content: center;
 }
 
+#navMobile {
+  display: none;
+}
+
 .navList {
   width: 100%;
   display: inline-flex;
@@ -177,3 +184,24 @@ footer {
   justify-content: center;
   align-items: center;
 }
+
+/* Adjustments for tablets, below 1024px wide */
+@media only screen and (max-width: 1024px) {
+  #eyeglasses {
+    display: none;
+  }
+
+  #navContainer {
+    display: none;
+  }
+
+  #navMobile {
+    color: #FFFFFF;
+    margin: 0.75rem 0;
+    display: flex;
+    justify-content: center;
+  }
+#products .flexContainer {
+  width: 47%;
+}
+
