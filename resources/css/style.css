@@ -1,5 +1,4 @@
 /* Base CSS for Secret Agent Supply Inc. */
-
 html,
 body {
   color: #000000;
@@ -29,10 +28,8 @@ h2 {
 .page {
   max-width: 960px;
   margin: 0 auto;
-  display: flex;
   flex-grow: 1;
   flex-shrink: 1;
-/*  border: medium dashed lightgreen; */
 }
 
 header {
@@ -94,10 +91,6 @@ nav {
   background-color: #B22222;
   width: 100%;
   height: auto;
-  position: -webkit-sticky;
-  position: sticky;
-    top: 2.32rem;
-  z-index: 80;
   display: flex;
   justify-content: center;
 }
@@ -120,6 +113,7 @@ nav {
 }
 
 #pageContent {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -193,23 +187,21 @@ footer {
   #eyeglasses {
     display: none;
   }
-
   #navContainer {
     display: none;
   }
-
   #navMobile {
     color: #FFFFFF;
     margin: 0.75rem 0;
     display: flex;
     justify-content: center;
   }
-#products .flexContainer {
-  width: 47%;
+  #products .flexContainer {
+    width: 47%;
+  }
 }
 
 /* Adjustments for phones 470px wide and below */
-
 @media only screen and (max-width: 470px) {
   h1 {
     font-size: 1rem;
@@ -235,13 +227,13 @@ footer {
     justify-content: center;
   }
   #locationHours {
-    flex-wrap: wrap
+    flex-wrap: wrap;
   }
   #products .flexContainer,
   #locationHours .flexContainer {
     width: 90%;
   }
-  #locationHours #hours {
+  #hours {
     margin-top: 0.5rem;
   }
   footer span.page {
@@ -249,3 +241,4 @@ footer {
     flex-grow: 0;
   }
 }
+ 
