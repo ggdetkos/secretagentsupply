@@ -88,13 +88,17 @@ nav {
   background-color: #B22222;
   width: 100%;
   height: auto;
+  position: -webkit-sticky;
+  position: sticky;
+    top: 2.32rem;
+  z-index: 100;
   display: flex;
   justify-content: center;
 }
 
-#navContainer {
-   color: #FFFFFF;
-   margin: 0.75rem 0;
-   display: flex;
-   justify-content: space-between;
+div#navContainer {
+  color: #FFFFFF;
+  margin: 0.75rem 0;
+  display: flex;
+  justify-content: space-between;
 }
